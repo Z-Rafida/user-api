@@ -2,7 +2,7 @@ import express from "express";
 import { databaseConnection } from "./config/database.js";
 import mongoose from "mongoose";
 import loginRouter from "./routes/loginRoute.js";
-import signUpRouter from "./routes/signUpRoute.js";
+// import signUpRouter from "./routes/signUpRoute.js";
 
 
 // connect to database
@@ -16,7 +16,7 @@ const userApp = express();
 
 // use routes
 userApp.use(loginRouter);
-userApp.use(signUpRouter);
+// userApp.use(signUpRouter);
 
 
 // listen to app
